@@ -1,0 +1,52 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" media="screen" href="assets/stylesheets/main.css">
+   
+    <script src="assets/javascripts/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+<title>Word Scramble Game</title>
+</head>
+
+<body>
+	<h1>Word Scramble Game</h1>
+
+	<div style="width: 144px; height: 157px">
+	<h2>Instructions</h2>
+
+	<p>Arrange the letters to form word</p>
+	<p>Type your answer and press &quot;Enter&quot; key</p>
+	<p>For showing the answer, press &quot;Surrender!&quot;</p>
+
+	</div>
+	<div style="position: absolute; width: 307px; height: 259px; z-index: 1; left: 209px; top: 68px" id="layer1">
+		<div id="view"></div>
+		<h2 id="scbw"></h2>
+		<h3 style="color:#069" id="mss">  </h3>
+		<div style="position: absolute; height: 18px; z-index: 1; left: 103px; top: 255px" id="layer2">
+			
+			<input id="res" name="show" type="submit" value="Surrender!" />
+			<input name="leave" type="submit" value="Leave game!" onclick="javascript:window.location.href='index.html'" />
+		</div>
+		 
+
+<form action="/enters" method="POST" id="myForm">
+
+	<div class="clearfix  " id="ans_field">
+    <label for="ans"></label>
+    <div class="input">
+        
+    <input type="text" id="ans" name="ans" value="" hidden="hidden" size="20" placeholder="case is insensitive">
+
+        <span class="help-inline"></span>
+        <span class="help-block"></span> 
+    </div>
+</div>
+
+			<input type="hidden" value="Submit">
+		
+</form>
+</div>
+<script src="assets/code.js" type="text/javascript">
+	
+</script>
+</body>
